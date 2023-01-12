@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<head>
+    <title> Day-1 assessment </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="myscript.js">
+    </script>
+ <style>
+        #headsection
+        {
+            background-color:aquamarine;
+            width:1400px;
+            height:150px;
+            position:relative;
+            
+            top:0;
+            font-size:40px;
+            font-style: italic;
+            border: 5px solid black;
+            border-radius: 5px;
+        }
+        .search {
+            float: right;
+            padding: 6px 10px;
+            position: absolute;
+            top: 130px;
+            left: 40px;
+            margin-top: 8px;
+            margin-right: 20px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        table th{
+            background-color:grey;
+        }
+        table td{
+            background-color:greenyellow;
+        }
+        table,td,tr,th{
+            width:200px;
+            border:1px solid black;
+            height:100px;
+            table-layout: fixed;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        h1{
+            padding-top:50px;
+            color:black;
+            text-align: center;
+        }
+        button{
+            color:greenyellow;
+            background-color: red;
+        }
+        body{
+            background-color:sandybrown;
+        }
+        label{
+            color:grey;
+        }
+        .checked {
+  color: orange;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <h1 id="headsection"> MOBILES PRODUCTS LIST 
+                 </h1>
+            </div>
+        <div class="search" id="myHeader">
+            <form>
+                <input id="search"  type="text" placeholder="Search.." name="search">
+                <button type="button" onclick="myname()" ><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+<table align="right">
+    <tr>
+        <th>MOBIE PHONE</th>
+        <td>OPPO F11 PRO</td>
+        <td>VIVO Y 22</td>
+        <td>SAMSUNG S20</td>
+        <td>POCO M4</td>
+    </tr>
+    <tr>
+        <th>PRICE</th>
+        <td>23, 000</td>
+        <td>PRICE:18, 000</td>
+        <td>PRICE:27, 500</td>
+        <td>PRICE:17, 500</td>
+
+    </tr>
+    <tr>
+        <th>BRAND</th>
+        <td> OPPO</td>
+        <td>VIVO</td>
+        <td> SAMSUNG</td>
+        <td>POCO</td>
+    </tr>
+    <tr>
+        <th>IMAGE</th>
+        <td><img src="mob.webp" width="100px" height="100px" alt="OPPO"> </td>
+        <td><img src="mob.webp" width="100px" height="100px" alt="OPPO"></td>
+        <td><img src="mob.webp" width="100px" height="100px"  alt="OPPO" ></td>
+        <td><img src="mob.webp" width="100px" height="100px" alt="OPPO">  </td>
+
+    </tr>
+    <tr>
+        <th>RAM SIZE</th>
+        <td>8GB</td>
+        <td>6GB</td>
+        <td>6GB</td>
+        <td>8GB</td>
+    </tr>
+    <tr>
+        <th>RATINGS</th>
+        <td><span class="fa fa-star checked "></span>
+            <span class="fa fa-star checked "></span>
+            <span class="fa fa-star checked "></span>
+            <span class="fa fa-star unchecked "></span>
+            <span class="fa fa-star unchecked "></span></td>
+        <td><span class="fa fa-star checked "></span>
+            <span class="fa fa-star checked "></span>
+            <span class="fa fa-star unchecked "></span>
+            <span class="fa fa-star unchecked "></span>
+            <span class="fa fa-star unchecked "></span></span></td>
+        <td><span class="fa fa-star checked "></span>
+            <span class="fa fa-star checked "></span>
+            <span class="fa fa-star checked "></span>
+            <span class="fa fa-star checked "></span>
+            <span class="fa fa-star unchecked "></span></td>
+        <td><span class="fa fa-star checked "></span>
+            <span class="fa fa-star checked "></span>
+            <span class="fa fa-star checked "></span>
+            <span class="fa fa-star checked "></span>
+            <span class="fa fa-star checked "></span></span></td>
+    </tr>
+    <tr>
+        <th>BUTTON</th>
+        <td><button type="button">Add to cart</button></td>
+        <td><button type="button">Add to cart</button></td>
+        <td><button type="button">Add to cart</button></td>
+        <td><button type="button">Add to cart</button></td>
+    </tr>
+    </table>
+    <form>
+        <h3><center> New Mobiles Section </center></h3>
+        <label for="name">Mobile name:</label><br><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="Ram size">Enter RAM size:</label><br><br>
+        <input type="radio" id="gender" name="gender" value="6 GB"/>6 GB<br><br>
+        <input type="radio" id="gender" name="gender" value="8 GB"/>8 GB<br><br>
+        <label for="Rom size">Enter ROM size:</label><br><br>
+        <input type="radio" id="gender" name="gender" value="6 GB"/>6 GB<br><br>
+        <input type="radio" id="gender" name="gender" value="8 GB"/>8 GB<br><br>
+        <label for="Price">Price:</label><br><br>
+        <input type="text" id="name" name="name"><br><br>
+        <button type="button">Add mobile</button>
+    </form>
+    </div>
+    </body>
