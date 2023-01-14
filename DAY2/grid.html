@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="grid1.js">
+        </script>
+        <style> 
+ .grid-container
+         {
+            grid-template-columns: auto auto auto auto auto;
+            display: grid;
+            row-gap:5px;
+            height:600px;
+            width:100%;
+            column-gap:5px;
+            background-color: aquamarine;
+            grid-column-gap: 2px;
+            margin:0; 
+         }
+        
+         .card
+         {
+            width: 200px;
+            height: 450px;
+            margin:auto;
+            text-align: center;
+            font-family:Arial, Helvetica, sans-serif;
+            color:aquamarine;
+            border: 5px solid black;
+            border-radius:25px;
+            background-color:grey;
+         }
+         .star
+        {
+        color:salmon;
+        border:none;
+        background-color:unset;
+        }
+        .star:hover{
+         cursor:pointer;
+         color:black;
+        }
+         h2{
+        padding: 15px;
+        color:brown;
+        background-color:sandybrown;
+        border: 5px solid black;
+       }
+       .head
+       {
+        position:sticky;
+        top:0;
+       }
+       .grid-item
+       {
+        display: flex;
+        border:1px solid black;
+        height:600px;
+        margin-top: 20px;
+        width:280px;
+       }
+       .grid-item1
+       {
+        display: flex;
+        border:1px solid black;
+        height:550px;
+        margin-top: 20px;
+        width:280px ;
+       }
+       .button
+      {
+       color:whitesmoke;
+      background-color: black;
+      border:2px solid wheat;
+     }
+     button
+      {
+       color:whitesmoke;
+      background-color: black;
+      border:2px solid whitesmoke;
+     }
+     label{
+    color:crimson;
+    margin-left: 5px;
+}
+#myDropDownList
+{
+    color:crimson;
+    margin-left: 5px;
+}
+.shop{
+    
+    border:2px solid salmon;
+    width: 150px;
+      height:70px;
+}
+.foot{
+    padding:25px;
+    background-color: sandybrown;
+    height:100px;
+}
+h3{
+    background-color: salmon;
+    width: 200px;
+    height:30px;
+    text-align: center;
+}
+#filter{
+    text-align: center;
+    margin-top: 20px;
+    width: 200px;
+    height:30px;
+    margin-left: 50px;
+    background-color: salmon;
+    color:black;
+    width: 200px;
+    height:30px;
+}
+        </style>
+    </head>
+    <body>
+        <h2 style="text-align:center" class="head">PRODUCTS PAGE</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <form>
+                    <label id="filter">Filter section</label><br><br>
+                    <label for="Brand">Brand:</label><br>
+                    <input type ="checkbox" id="realme" value="realme"/>
+                    <label for="realme">realme</label><br>
+                    <input type ="checkbox" id="poco" value="poco"/>
+                    <label for="poco">poco</label><br>
+                    <input type ="checkbox" id="Samsung" value="Samsung"/>
+                    <label for="Samsung">Samsung</label><br>
+                    <input type ="checkbox" id="Apple" value="Apple"/>
+                    <label for="Apple">Apple</label><br>
+                    <input type ="checkbox" id="oppo" value="oppo"/>
+                    <label for="oppo">oppo</label><br>
+                    <input type ="checkbox" id="vivo" value="vivo"/>
+                    <label for="vivo">vivo</label><br><br>
+                    <label for="name">Price:</label><br>
+                    <select id="myDropDownList" name="myDropDownList">
+                        <option value="10,000">Rs.10,000</option>
+                        <option value="20,000">Rs.20,000</option>
+                        <option value="30,000">Rs.30,000</option>
+                        <option value="40,000">Rs.40,000</option>
+                        <option value="50,000">Rs.50,000</option>
+                      </select>       
+                      <select id="myDropDownList" name="myDropDownList">
+                        <option value="10,000">Rs.50,000+</option>
+                        <option value="20,000">Rs.60,000+</option>
+                        <option value="30,000">Rs.70,000+</option>
+                        <option value="40,000">Rs.80,000+</option>
+                        <option value="50,000">Rs.90,000+</option>
+                      </select><br><br>
+                    <label>RAM Size</label><br>
+                    <input type ="checkbox" id="8GB" value="8GB"/>
+                    <label for="8GB">8GB</label><br>
+                    <input type ="checkbox" id="6GB" value="6GB"/>
+                    <label for="6GB">6GB</label><br>
+                    <input type ="checkbox" id="8GB and above" value="Samsung"/>
+                    <label for="8GB and above">8GB and above</label><br>
+                    <input type ="checkbox" id="4GB" value="4GB"/>
+                    <label for="4GB">4GB</label><br> <br> 
+                    <label>Storage</label><br>
+                    <input type ="checkbox" id="128 GB" value="128 GB"/>
+                    <label for="128 GB">128 GB</label><br>
+                    <input type ="checkbox" id="32GB" value="6GB"/>
+                    <label for="32GB">32GB</label><br>
+                    <input type ="checkbox" id="256GB and above" value="Samsung"/>
+                    <label for="256GB and above">256GB and above</label><br>
+                    <input type ="checkbox" id="64GB" value="64GB"/>
+                    <label for="64GB">64GB</label><br><br>
+                    <label>Ratings</label><br>
+                    <input type ="checkbox">
+                    <label for="4 star"><button class="star">&#9733</button>
+                        <button class="star">&#9733</button>
+                        <button class="star">&#9733</button>
+                        <button class="star">&#9733</button>
+                    </label><br>
+                    <input type ="checkbox">
+                    <label for="5 star"><button class="star">&#9733</button>
+                        <button class="star">&#9733</button>
+                        <button class="star">&#9733</button>
+                        <button class="star">&#9733</button>
+                        <button class="star">&#9733</button>
+                    </label><br>
+                    <input type ="checkbox">
+                    <label for="3 star"><button class="star">&#9733</button>
+                        <button class="star">&#9733</button>
+                        <button class="star">&#9733</button>
+                    </label>
+                </form>
+
+                </div>
+            <div class="grid-item">
+                <div class="card">
+                    <p><b>OPPO F11 PRO</b></p>
+                    <hr style="height:2px;border-width:0;background-color:gray">
+                    <img src="mob.webp" class="imgcls" width="130px" height="150px" >
+                    <p class="price"><b>29,900</b></p>
+                    <p><b>8 GB RAM</b></p>
+                    <p><b>128 GB Storage</p></b></p>
+                    <p><b>OPPO</b></p>
+                    <div>
+                        <button class="star">&#9733</button>
+                        <button class="star">&#9733</button>
+                        <button class="star">&#9733</button>
+                        <button class="star">&#9734</button>
+                        <button class="star">&#9734</button>
+                    </div>
+                    <p><button onclick="myname()" class="button">Add to Cart</button></p>
+                    <br>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <p><b>VIVO Y19</b></p>
+                    <hr style="height:2px;border-width:0;background-color:gray">
+                    <img src="mob.webp" class="imgcls" width="130px" height="150px" >
+                    <p class="price"><b>22,600</b></p>
+                    <p><b>6 GB RAM</b></p>
+                    <p><b>128 GB Storage</p></b></p>
+                    <p><b>VIVO</b></p>
+                    <div>
+                        <button class="star">&#9733</button>
+                        <button class="star">&#9733</button>
+                        <button class="star">&#9734</button>
+                        <button class="star">&#9734</button>
+                        <button class="star">&#9734</button>
+                    </div>
+                    <p><button onclick="myname()" class="button">Add to Cart</button></p>
+                    <br>
+                </div>            </div>  
+            <div class="grid-item">
+                <div class="card">
+                    <p><b>SAMSUNG S20</b></p>
+                    <hr style="height:2px;border-width:0;background-color:gray">
+                    <img src="mob.webp" class="imgcls" width="130px" height="150px" >
+                    <p class="price"><b>38,900</b></p>
+                    <p><b>8 GB RAM</b></p>
+                    <p><b>256 GB Storage</p></b></p>
+                    <p><b>SAMSUNG</b></p>
+                    <div>
+                        <button class="star">&#9733</button>
+                        <button class="star">&#9733</button>
+                        <button class="star">&#9733</button>
+                        <button class="star">&#9734</button>
+                        <button class="star">&#9734</button>
+                    </div>
+                    <p><button onclick="myname()" class="button">Add to Cart</button></p>
+                    <br>
+                </div>
+            </div>
+            <div class="grid-item" id="cart">
+                <button onclick="myname()" class="shop">shopping cart</button>
+            </div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item1">
+                    <form onsubmit="myFunction()">
+                        <h3>Add mobiles section</h3>
+                        <label for="name">Mobile name:</label><br><br>
+                        <input type="text" id="mobilename" name="name"><br><br>
+                        <label for="Ram size">Enter RAM size:</label><br><br>
+                        <input type="radio" id="RAM" name="gender" value="6 GB"/>6 GB<br><br>
+                        <input type="radio" id="RAM" name="gender" value="8 GB"/>8 GB<br><br>
+                        <label for="Rom size">Enter ROM size:</label><br><br>
+                        <input type="radio" id="ROM" name="gender" value="6 GB"/>6 GB<br><br>
+                        <input type="radio" id="ROM" name="gender" value="8 GB"/>8 GB<br><br>
+                        <label for="Price">Price:</label><br><br>
+                        <input type="text" id="price" name="name"><br><br>
+                        <button onclick="myFunction()" type="button">Add mobile</button>
+                    </form>
+                </div>
+                <div class="grid-item1">
+                    <div class="card">
+                        <p><b>OPPO F11 PRO</b></p>
+                        <hr style="height:2px;border-width:0;background-color:gray">
+                        <img src="mob.webp" class="imgcls" width="130px" height="150px" >
+                        <p class="price"><b>29,900</b></p>
+                        <p><b>8 GB RAM</b></p>
+                        <p><b>128 GB Storage</p></b></p>
+                        <p><b>OPPO</b></p>
+                        <div>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9734</button>
+                            <button class="star">&#9734</button>
+                        </div>
+                        <p><button onclick="myname()" class="button">Add to Cart</button></p>
+                        <br>
+                    </div>
+                </div>
+                <div class="grid-item1">
+                    <div class="card">
+                        <p><b>OPPO F11 PRO</b></p>
+                        <hr style="height:2px;border-width:0;background-color:gray">
+                        <img src="mob.webp" class="imgcls" width="130px" height="150px" >
+                        <p class="price"><b>29,900</b></p>
+                        <p><b>8 GB RAM</b></p>
+                        <p><b>128 GB Storage</p></b></p>
+                        <p><b>OPPO</b></p>
+                        <div>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9734</button>
+                            <button class="star">&#9734</button>
+                        </div>
+                        <p><button onclick="myname()" class="button">Add to Cart</button></p>
+                        <br>
+                    </div>
+                </div>
+                <div class="grid-item1">
+                    <div class="card">
+                        <p><b>OPPO F11 PRO</b></p>
+                        <hr style="height:2px;border-width:0;background-color:gray">
+                        <img src="mob.webp" class="imgcls" width="130px" height="150px" >
+                        <p class="price"><b>29,900</b></p>
+                        <p><b>8 GB RAM</b></p>
+                        <p><b>128 GB Storage</p></b></p>
+                        <p><b>OPPO</b></p>
+                        <div>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9733</button>
+                            <button class="star">&#9734</button>
+                            <button class="star">&#9734</button>
+                        </div>
+                        <p><button onclick="myname()" class="button">Add to Cart</button></p>
+                        <br>
+                    </div>
+                </div>
+                <div class="grid-item1">
+
+                </div>
+
+
+            </div>
+            <footer class="foot">
+                <p align="right">
+                    <button>Checkout</button>
+                  </p>
+                <p><center>This document is an electronic record in terms of Information Technology Act, 2000 and rules there under as applicable and the amended provisions pertaining to electronic records in various statutes as amended by the Information Technology Act, 2000. This electronic record is generated by a computer system and does not require any physical or digital signatures.</center></p>
+            </footer>
+    </body>
+</html>
+
