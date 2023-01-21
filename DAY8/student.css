@@ -1,0 +1,24 @@
+#head{
+    font-family: "Lucida Console", monospace;
+}
+#name{
+    font-family: "Lucida Console", monospace;
+}
+.btn{
+    background-color: grey;
+    width:100px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: pink;
+}
+.container{
+    border:2px solid grey;
+    width:500px;
+    height:400px;
+    margin-top: 100px;
+    margin-left:500px;
+    box-shadow: 30px;
+}
