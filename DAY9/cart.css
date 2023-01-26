@@ -1,0 +1,30 @@
+.cart{
+    margin-top: 40px;
+    border:1px solid black;
+    border-radius: 10px;
+    background-color:grey;
+    width:700px;
+    height:600px;
+    margin-left:400px;
+    margin-bottom:20px;
+    box-shadow: 3px 3px 10px 5px black;
+}
+#rem{
+    width:150px;
+    background-color:pink;
+    border:1px solid black;
+}
+#rem:hover{
+    background-color:whitesmoke;
+}
+#order{
+    background-color: grey;
+    width:200px;
+    height:50px;
+    margin-left:100px;
+}
+
+.inc{
+    width:20px;
+    height:20px;
+}
